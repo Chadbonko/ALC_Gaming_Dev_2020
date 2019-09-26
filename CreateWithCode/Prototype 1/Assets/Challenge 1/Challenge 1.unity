@@ -1170,6 +1170,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: af29f0ea7e5403641b3b244ede69c374, type: 3}
+      propertyPath: m_Name
+      value: Propeller
+      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: af29f0ea7e5403641b3b244ede69c374, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1231,10 +1235,6 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: af29f0ea7e5403641b3b244ede69c374, type: 3}
-      propertyPath: m_Name
-      value: Propeller
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af29f0ea7e5403641b3b244ede69c374, type: 3}
 --- !u!1 &1259354218
@@ -1282,7 +1282,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e543061c3c15e453b860b397b80ffa70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
 --- !u!1 &1295456286
 GameObject:
   m_ObjectHideFlags: 0
@@ -1668,7 +1667,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e543061c3c15e453b860b397b80ffa70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
 --- !u!1 &1667803326
 GameObject:
   m_ObjectHideFlags: 0
@@ -2009,4 +2007,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e543061c3c15e453b860b397b80ffa70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0

@@ -8,10 +8,8 @@ public class PlayerController : MonoBehaviour
     private float turnSpeed = 60f;
     private float horizontalInput;
     private float forwardInput;
-
     // Update is called once per frame
     void Update()
-
     // This code moves vehicle forward and back, as well as rotates it right and left.
     {
         horizontalInput = Input.GetAxis("Horizontal");
