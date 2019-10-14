@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1945156937544898190}
   - component: {fileID: 1945156937546028110}
   - component: {fileID: 1945156938316405641}
+  - component: {fileID: 6238341947620861035}
   m_Layer: 0
   m_Name: Food_EnergyCan_01
   m_TagString: Untagged
@@ -92,3 +93,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
+--- !u!114 &6238341947620861035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945156937548286606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f5571d1df15e439ca62af381a3393e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
