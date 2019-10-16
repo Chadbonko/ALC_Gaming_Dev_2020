@@ -449,6 +449,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3830836977616422819}
   - component: {fileID: 3830836977622005817}
+  - component: {fileID: 4794874922651461690}
   m_Layer: 0
   m_Name: SM_BorderCollie_01
   m_TagString: Untagged
@@ -565,6 +566,19 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.0000000055879354, y: -0.030785777, z: 0.08916274}
     m_Extent: {x: 0.04526128, y: 0.10259331, z: 0.13557574}
   m_DirtyAABB: 0
+--- !u!65 &4794874922651461690
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3830836977616592727}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.09052256, y: 0.20518664, z: 0.2711515}
+  m_Center: {x: -0.000000005587936, y: 0.10259331, z: -0.0027278364}
 --- !u!1 &3830836977616593889
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,6 +1274,8 @@ GameObject:
   - component: {fileID: 3830836977626034127}
   - component: {fileID: 3830836977074068313}
   - component: {fileID: 9078705169242906067}
+  - component: {fileID: 3105338001744514040}
+  - component: {fileID: 7578296050751416854}
   m_Layer: 0
   m_Name: Doggo
   m_TagString: Untagged
@@ -1360,6 +1376,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f5571d1df15e439ca62af381a3393e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &3105338001744514040
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3830836977616609911}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.64841527, z: 1}
+  m_Center: {x: 0, y: -0.17579238, z: 0}
+--- !u!114 &7578296050751416854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3830836977616609911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef0ed57e8d85a4d238ecc4b43b853f95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3830836977616611995

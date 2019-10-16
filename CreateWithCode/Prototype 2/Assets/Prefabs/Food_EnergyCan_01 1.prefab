@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 4434286606662856813}
   - component: {fileID: 4434286607427993514}
   - component: {fileID: 417573567414402793}
+  - component: {fileID: -21427731823317599}
+  - component: {fileID: 4665424752324099812}
   m_Layer: 0
   m_Name: Food_EnergyCan_01 1
   m_TagString: Untagged
@@ -103,5 +105,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f5571d1df15e439ca62af381a3393e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &-21427731823317599
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4434286606660923053}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &4665424752324099812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4434286606660923053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef0ed57e8d85a4d238ecc4b43b853f95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

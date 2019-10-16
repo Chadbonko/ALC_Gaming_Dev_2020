@@ -231,7 +231,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalInput: 0
   speed: 25
-  xRange: 10
+  xRange: 15
   projectilePrefab: {fileID: 4434286606660923053, guid: 4e0e103d9a55f4e47a3880bce885ef4a,
     type: 3}
 --- !u!1 &425805626
@@ -491,7 +491,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 45
-  orthographic: 0
+  orthographic: 1
   orthographic size: 10
   m_Depth: -1
   m_CullingMask:
