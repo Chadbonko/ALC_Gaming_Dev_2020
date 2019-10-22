@@ -4476,7 +4476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37c9d1db9a8c24458acf9029e86b587d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 3
 --- !u!114 &462666122013109227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4497,11 +4497,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384630926212397776}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.115515456, y: 0.17594275, z: 0.20837562}
+  m_Center: {x: -0.0037741563, y: 0.13182966, z: 0.08954382}
 --- !u!114 &4811723430750006073
 MonoBehaviour:
   m_ObjectHideFlags: 0
