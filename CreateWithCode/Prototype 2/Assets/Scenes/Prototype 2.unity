@@ -308,6 +308,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e07c5f1d36e234d6587683ad10aff31c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 4434286606660923053, guid: 4e0e103d9a55f4e47a3880bce885ef4a,
+    type: 3}
 --- !u!95 &217304954
 Animator:
   serializedVersion: 3

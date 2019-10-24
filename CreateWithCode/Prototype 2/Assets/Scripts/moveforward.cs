@@ -15,6 +15,7 @@ public class moveforward : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Move animals and other npc forward
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
 
 

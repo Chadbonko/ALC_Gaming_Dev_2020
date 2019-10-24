@@ -18,6 +18,7 @@ public class SpawnManager : MonoBehaviour
     {
  
     }
+    // Spawns animals on top of screen to move down toward player 
     void SpawnRandomAnimal()
     {
        

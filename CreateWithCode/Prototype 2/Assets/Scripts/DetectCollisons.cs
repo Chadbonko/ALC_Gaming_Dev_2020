@@ -14,7 +14,7 @@ public class DetectCollisons : MonoBehaviour
     {
 
     }
-    // Update is called once per frame
+    // Destroys colliding objects (Projectiles and animals)
     void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);

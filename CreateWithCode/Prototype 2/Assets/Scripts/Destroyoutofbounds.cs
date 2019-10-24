@@ -15,6 +15,7 @@ public class Destroyoutofbounds : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Give player game over message if an animal goes out of bounds, also destroys any npc that gets out of bounds.
         if (transform.position.z > topBound)
         {
             Destroy(gameObject);

@@ -11,7 +11,7 @@ public class PlayerControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //boundaries for player so they don't fly off of screen
+        // Boundaries for player so they don't fly off of screen
          if (transform.position.x < -xRange)
         {
             transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
@@ -20,11 +20,12 @@ public class PlayerControler : MonoBehaviour
         {
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
-        //player moves left and right using arrow keys
+        // Player moves left and right using arrow keys
         horizontalInput = Input.GetAxis("Horizontal");
 
         transform.Translate(Vector3.right * Time.deltaTime * horizontalInput * speed);
 
+        // Allow player to shoot projectiles using prefabs by pressing down on space bar
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
