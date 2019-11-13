@@ -10,20 +10,14 @@ public class SpawnManager : MonoBehaviour
     private float repeatRate = 2;
     private PlayerController playerControllerScript;
     // Start is called before the first frame update
+    //This code sets our obstacles to spawn at our set interval of time and at a constant rate
     void Start()
     {
         InvokeRepeating("SpawnObstacle", startDelay, repeatRate);
         playerControllerScript =
             GameObject.Find("Player").GetComponent<PlayerController>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    // spawn in intervals
+    // This code stops our obstacles from spawning after game over. We do this with an "if statement" if game over is false spawn more obstacles.
     void SpawnObstacle()
     {
         if (playerControllerScript.gameOver == false)

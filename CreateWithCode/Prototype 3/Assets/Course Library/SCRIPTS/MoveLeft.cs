@@ -13,13 +13,12 @@ public class MoveLeft : MonoBehaviour
         playerControllerScript =
             GameObject.Find("Player").GetComponent<PlayerController>(); 
     }
-
-    // Update is called once per frame
+    // This code moves the obstacles and background left to create an illusion of the player running endlessly and stops them on game over. We use an if statement so if game over is false the script moves left. 
     void Update()
     {
         if (playerControllerScript.gameOver == false)
         transform.Translate(Vector3.left * Time.deltaTime * speed);
-
+        // This if statement compares tags to destroy obstacle once it reaches leftbound
         if (transform.position.x < leftBound && gameObject.CompareTag("Obstacle")) { Destroy(gameObject); }
     }
 }
