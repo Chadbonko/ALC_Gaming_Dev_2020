@@ -58,7 +58,7 @@ public class PlayerControllerX : MonoBehaviour
           
         }
 
-        // if player collides with money, fireworks
+        // if player collides with money, fireworks 
         else if (other.gameObject.CompareTag("Money"))
         {
             fireworksParticle.Play();
@@ -66,13 +66,14 @@ public class PlayerControllerX : MonoBehaviour
             Destroy(other.gameObject);
 
         }
+        // if ballon goes too high in the sky it bounces down slightly and cannot go any higher.
         if (other.gameObject.CompareTag("Sky"))
         {
             highAsFrick = true;
             playerRb.AddForce(Vector3.down * weakerFloatForce, ForceMode.Impulse);
             playerAudio.PlayOneShot(bounceSound, 1.0f);
         }
-
+        // if ballon hits ground it bounces up
         if (other.gameObject.CompareTag("Ground"))
         {
             isOnGround = true;
