@@ -7,6 +7,9 @@ public class Enemy : MonoBehaviour
     private Rigidbody enemyRb;
     public float speed;
     private GameObject player;
+
+    public int Length { get; internal set; }
+
     // Start is called before the first frame update
     void Start()
     {
