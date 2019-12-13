@@ -7,21 +7,22 @@ public class Enemy : MonoBehaviour
     private Rigidbody enemyRb;
     public float speed;
     private GameObject player;
-
-    public int Length { get; internal set; }
-
     // Start is called before the first frame update
     void Start()
     {
+        //this gives our enemies instruction to find our player.
         enemyRb = GetComponent<Rigidbody>();
         player = GameObject.Find("Player");
-
     }
-
     // Update is called once per frame
     void Update()
     {
+        //this code makes our enemies follow the player.
         Vector3 lookDirection = (player.transform.position - transform.position).normalized;
         enemyRb.AddForce(lookDirection * speed);
+        if(transform.position.y < -10)
+        {
+            Destroy(gameObject);
+        }
     }
 }

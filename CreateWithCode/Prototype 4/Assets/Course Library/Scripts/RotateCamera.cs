@@ -5,13 +5,8 @@ using UnityEngine;
 public class RotateCamera : MonoBehaviour
 {
     public float rotationSpeed;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    // Update is called once per frame 
+    // this code rotates our camera from player input.
     void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
