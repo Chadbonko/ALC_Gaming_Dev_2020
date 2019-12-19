@@ -15,15 +15,29 @@ public class Target : MonoBehaviour
         targetRb = GetComponent<Rigidbody>();
         targetRb.AddForce(RandomForce(), ForceMode.Impulse);
         targetRb.AddTorque(RandomTorque(), Random.Range(-10, 10), Random.Range(-10, 10), ForceMode.Impulse);
-        transform.position = new Vector3(RandomSpawnPos());
+        transform.position = (RandomSpawnPos());
     }
 
     Vector3 RandomForce() { return Vector3.up * Random.Range(minSpeed, maxSpeed); }
     float RandomTorque() { return Random.Range(-maxTorque, maxTorque); }
-    Vector3 RandomSpawnPos() { return new Vector3(Random.Range(-xRange, xRange), ySpawnPos); }
+
+    Vector3 RandomSpawnPos() 
+    {
+        return new Vector3(Random.Range(-xRange, xRange), ySpawnPos); 
+    }
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    private void OnMouseDown()
+    {
+        Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(gameObject);
     }
 }
