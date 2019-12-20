@@ -7,7 +7,6 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    
     public List<GameObject> targets;
     private float spawnRate = 1.0f;
     private int score;
@@ -17,11 +16,7 @@ public class GameManager : MonoBehaviour
     public Button restartButton;
     public GameObject titleScreen;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-        
-    }
+    //This code starts the game once difficulty is selected and sets difficulty.
     public void StartGame(int difficulty)
     {
         isGameActive = true;
@@ -30,15 +25,15 @@ public class GameManager : MonoBehaviour
         StartCoroutine(SpawnTarget());
         UpdateScore(0);
         titleScreen.gameObject.SetActive(false);
-
     }
-
+    //This code triggers game over displaying a UI message and restart button
     public void GameOver()
     {
         gameOverText.gameObject.SetActive(true);
         isGameActive = false;
         restartButton.gameObject.SetActive(true);
     }
+    //this manages how often a new object is spawned due to the difficulty(spawnrate), randomly selects the items spawned from our list, and instantiates those randomized objects.
     IEnumerator SpawnTarget()
     {
         while (isGameActive)
@@ -47,22 +42,18 @@ public class GameManager : MonoBehaviour
             int index = Random.Range(0, targets.Count);
             Instantiate(targets[index]);
         }
-
     }
-   
+    //This code updates player score when they destroy an object.
     public void UpdateScore(int scoreToAdd)
     {
         score += scoreToAdd;
         scoreText.text = "Score: " + score;
     }
-    // Update is called once per frame
-    void Update()
-    {
-      
-
-    }
+    //This code restarts the game by loading the current scene.
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+    
+
 }
