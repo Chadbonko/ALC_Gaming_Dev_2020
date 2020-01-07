@@ -44,6 +44,7 @@ public class collider : MonoBehaviour
         {
             Destroy(GameObject.Find("roomba"));
             Debug.Log("You Win!");
+            fixRoomba = true;
         }
     }
 }
