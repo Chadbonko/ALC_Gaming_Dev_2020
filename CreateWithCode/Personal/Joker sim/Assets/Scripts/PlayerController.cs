@@ -12,10 +12,11 @@ public class PlayerController : MonoBehaviour
     public float jumpForce;
     public bool isOnGround;
     public Rigidbody playerRb;
-    
+    private Animator playerAnim;
     // Start is called before the first frame update
     void Start()
     {
+        playerAnim = GetComponent<Animator>();
         playerRb = GetComponent<Rigidbody>();
         Physics.gravity *= gravityModifier;
     }
@@ -27,6 +28,7 @@ public class PlayerController : MonoBehaviour
         {
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
+            playerAnim.SetTrigger("Jump_trig");
         }
         horizontalInput = Input.GetAxis("Horizontal");
         forwardInput = Input.GetAxis("Vertical");

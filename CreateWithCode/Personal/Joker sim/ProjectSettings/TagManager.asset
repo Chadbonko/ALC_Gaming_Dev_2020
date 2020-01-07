@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Death
   - Ground
+  - wheel
+  - battery
+  - trash
+  - roomba
   layers:
   - Default
   - TransparentFX
