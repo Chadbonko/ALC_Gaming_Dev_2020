@@ -46,6 +46,11 @@ public class collider : MonoBehaviour
             Debug.Log("You Win!");
             fixRoomba = true;
         }
+        if (collider.tag == "Death")
+        {
+            Destroy(GameObject.Find("Player"));
+            Debug.Log("You an unepic gamer go back and try again.");
+        }
     }
 }
 
